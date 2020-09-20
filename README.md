@@ -1,2 +1,2 @@
 # algoritmo-dijkstra
-Simulator do Agoritmo Dijkstra - P.O
+Simulador do Agoritmo Dijkstra - P.O
