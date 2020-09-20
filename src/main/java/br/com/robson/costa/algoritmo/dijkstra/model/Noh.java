@@ -12,13 +12,13 @@ import lombok.Setter;
  * 
  * "Nó" / Node
  */
-@Getter
-@Setter
+//@Getter
+//@Setter
 public class Noh {
 	  
-	private Point coordenadas = new Point();
-	private int id;
-	private List<Noh> caminho;
+	@Getter private Point coordenadas = new Point();
+	@Getter @Setter private int id;
+	@Getter @Setter private List<Noh> caminho;
 
     public Noh(){}
 
@@ -28,6 +28,10 @@ public class Noh {
 
     public Noh(Point p){
         this.coordenadas = p;
+    }
+    
+    public void setCoordenadas(int x, int y) {
+    	coordenadas.setLocation(x, y);
     }
     
     public int getX(){
