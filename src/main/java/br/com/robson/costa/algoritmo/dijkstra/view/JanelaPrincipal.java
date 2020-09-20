@@ -53,9 +53,11 @@ public class JanelaPrincipal extends JPanel {
     
     private void setTopPanel() {
         JLabel info = new JLabel("Simulador de menor caminho, usando o Algoritmo de Dijkstra - By -> Robson H. R. Costa ");
-        info.setForeground(new Color(230, 220, 250));
+//        info.setForeground(new Color(230, 220, 250));
+        info.setForeground(new Color(255, 255, 255));
         JPanel panel = new JPanel();
-        panel.setBackground(new Color(130, 50, 250));
+//        panel.setBackground(new Color(130, 50, 250));
+        panel.setBackground(new Color(172, 0, 0));
         panel.add(info);
         panel.setBorder(new EmptyBorder(5, 5, 5, 5));
         add(panel, BorderLayout.NORTH);
@@ -70,7 +72,8 @@ public class JanelaPrincipal extends JPanel {
         setupIcon(info, "info");
 
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setBackground(DrawUtils.parseColor("#DDDDDD"));
+//        buttonPanel.setBackground(DrawUtils.parseColor("#DDDDDD"));
+        buttonPanel.setBackground(DrawUtils.parseColor("#5959FF"));
         buttonPanel.add(reset);
         buttonPanel.add(start);
         buttonPanel.add(info);

@@ -86,7 +86,13 @@ public class DrawUtils {
 	    }
 
 	    public void drawPath(Aresta aresta) {
-	        g.setColor(parseColor("#00BCD4"));
+	    	// Desenha o melhor caminho
+	    	
+//	        g.setColor(parseColor("#00BCD4"));
+//	        g.setColor(parseColor("#da0000")); // Vermelho
+	    	g.setColor(parseColor("#fcff00")); // Amarelo
+	    	
+
 	        drawBoldEdge(aresta);
 	    }
 
@@ -108,7 +114,8 @@ public class DrawUtils {
 	    }
 
 	    public void drawEdge(Aresta aresta) {
-	        g.setColor(parseColor("#555555"));
+//	        g.setColor(parseColor("#555555"));
+	        g.setColor(parseColor("#000000"));
 	        drawBaseEdge(aresta);
 	        drawWeight(aresta);
 	    }
@@ -128,15 +135,16 @@ public class DrawUtils {
 	    }
 
 	    public void drawSourceNode(Noh node){
-	        g.setColor(parseColor("#00BCD4"));
+//	        g.setColor(parseColor("#00BCD4"));
+	        g.setColor(parseColor("#dee136"));
 	        g.fillOval(node.getX() - radius, node.getY() - radius, 2 * radius, 2 * radius);
 
 	        radius-=5;
-	        g.setColor(parseColor("#B2EBF2"));
+	        g.setColor(parseColor("#c3e476"));
 	        g.fillOval(node.getX() - radius, node.getY() - radius, 2 * radius, 2 * radius);
 
 	        radius+=5;
-	        g.setColor(parseColor("#00BCD4"));
+	        g.setColor(parseColor("#000000"));
 	        drawCentreText(String.valueOf(node.getId()), node.getX(), node.getY());
 	    }
 
@@ -154,15 +162,18 @@ public class DrawUtils {
 	    }
 
 	    public void drawNode(Noh node){
-	        g.setColor(parseColor("#9C27B0"));
+//	        g.setColor(parseColor("#9C27B0"));
+	        g.setColor(parseColor("#0000a9"));
 	        g.fillOval(node.getX() - radius, node.getY() - radius, 2 * radius, 2 * radius);
 
 	        radius-=5;
-	        g.setColor(parseColor("#E1BEE7"));
+//	        g.setColor(parseColor("#E1BEE7"));
+	        g.setColor(parseColor("#7424c2"));
 	        g.fillOval(node.getX() - radius, node.getY() - radius, 2 * radius, 2 * radius);
 
 	        radius+=5;
-	        g.setColor(parseColor("#9C27B0"));
+//	        g.setColor(parseColor("#9C27B0"));
+	        g.setColor(parseColor("#ffffff"));
 	        drawCentreText(String.valueOf(node.getId()), node.getX(), node.getY());
 	    }
 
