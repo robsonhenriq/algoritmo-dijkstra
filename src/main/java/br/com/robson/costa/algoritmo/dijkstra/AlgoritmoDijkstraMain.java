@@ -25,7 +25,7 @@ public class AlgoritmoDijkstraMain {
 		}
 
 		JFrame j = new JFrame();
-		j.setTitle("Algoritmo de Dijkstra - Robson Henrique R. Costa - PEO");
+		j.setTitle("Algoritmo de Dijkstra - Robson Henrique R. Costa | Pesquisa Operacional");
 
 		j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		j.setSize(new Dimension(900, 600));
